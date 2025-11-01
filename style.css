@@ -1,0 +1,40 @@
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 95vh;
+  background-color: #111;
+  color: white;
+  font-family: Arial, sans-serif;
+}
+
+#gameContainer {
+  display: grid;
+  grid-template-columns: repeat(40, 10px);
+  grid-template-rows: repeat(40, 10px);
+  width: 400px;
+  height: 400px;
+  background-color: #222;
+  border: 2px solid #0f0;
+  margin-top: 20px;
+}
+
+.pixel {
+  width: 10px;
+  height: 10px;
+}
+
+.snakeBodyPixel {
+  background-color: limegreen;
+}
+
+.food {
+  background-color: red;
+  border-radius: 50%;
+}
+
+.scoreBoard {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
